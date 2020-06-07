@@ -1,3 +1,0 @@
-ID$FirstName$LastName
-15cf5af8-7c7c-420c-923f-17e661ad96be$Joe$Bob
-4d7091e1-3a16-4d05-b1c0-6d8be16ae2ed$Sally$May

@@ -11,14 +11,14 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class CsvAppender {
+public class CsvWriter {
 
     private File csvFile;
     private String delimiter;
     static final String NEW_FILE_LOCATION_AND_NAME = "/Users/Aaron/IdeaProjects/CsvAppender/src/main/resources/csv/newCsv.txt";
 
 
-    public CsvAppender(String delimiter) {
+    public CsvWriter(String delimiter) {
         this.csvFile = new File(getClass().getClassLoader().getResource("csv/TestCsv.txt").getFile());
         this.delimiter = delimiter;
     }
@@ -58,7 +58,6 @@ public class CsvAppender {
     }
 
     private Function<String, NewTable> mapToItem = (line) -> {
-
         Optional<NewTable> newTable = Optional.empty();
         if (line != null) {
             String[] p = line.split("\\$");
