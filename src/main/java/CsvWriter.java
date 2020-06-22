@@ -41,6 +41,7 @@ public class CsvWriter {
         } catch(IOException e) {
             System.out.println("Unable to write new file");
         }
+        System.out.println("New CSV file written to: " + NEW_FILE_LOCATION_AND_NAME);
     }
 
     private List<NewTable> readFile(File csvFile) {
