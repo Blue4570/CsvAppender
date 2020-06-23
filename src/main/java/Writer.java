@@ -89,7 +89,7 @@ public class Writer {
                 } else {
                     sb.append(newRowData[d]);
                 }
-                newRows[i] = sb.toString();
+                newRows[i] = String.valueOf(sb);
             }
         }
 
@@ -126,6 +126,7 @@ public class Writer {
             }
         } catch (IOException e) {
             System.out.println("Error reading file");
+            e.printStackTrace();
         }
           return dataMap;
     }

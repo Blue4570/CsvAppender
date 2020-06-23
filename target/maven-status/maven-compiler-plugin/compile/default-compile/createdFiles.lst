@@ -1,5 +1,3 @@
+model/UserInput.class
 Main.class
 Writer.class
-model/UserInput.class
-NewTable.class
-CsvWriter.class
