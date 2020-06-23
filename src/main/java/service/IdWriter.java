@@ -19,8 +19,6 @@ public class IdWriter implements Writer{
     private final String newHeaderName;
     private final int newHeaderPosition;
     private final String newFileLocation;
-//    static final String NEW_FILE_LOCATION_AND_NAME = "/Users/Aaron/IdeaProjects/CsvWriter/src/main/resources/csv/newCsv.txt";
-
 
     public IdWriter(String delimiter, String newHeaderName, int newHeaderPosition, String oldFileLocation, String newFileLocation) {
         this.csvFile = new File(oldFileLocation).getAbsoluteFile();
