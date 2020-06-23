@@ -1,4 +1,4 @@
-package model;
+package com.CsvWriter.model;
 
 public class UserInput {
 

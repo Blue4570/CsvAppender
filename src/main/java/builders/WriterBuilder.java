@@ -1,8 +1,9 @@
-package builders;
+package com.CsvWriter.builders;
 
-import model.UserInput;
-import service.IdWriter;
-import service.Writer;
+
+import com.CsvWriter.model.UserInput;
+import com.CsvWriter.service.IdWriter;
+import com.CsvWriter.service.Writer;
 
 public class WriterBuilder {
 

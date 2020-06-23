@@ -1,5 +1,5 @@
-Main.class
-service/Writer.class
-model/UserInput.class
-builders/WriterBuilder.class
-service/IdWriter.class
+com/CsvWriter/service/Writer.class
+com/CsvWriter/service/IdWriter.class
+com/CsvWriter/builders/WriterBuilder.class
+com/CsvWriter/Main.class
+com/CsvWriter/model/UserInput.class
