@@ -1,5 +1,3 @@
-import javafx.beans.binding.StringBinding;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -66,7 +64,7 @@ public class Writer {
         }
         writer.append("\n");
     }
-    
+
     private void writeRows(FileWriter writer, String[] originalRows, int positionToAdd, int totalNumOfColumns) throws IOException {
 
         String[] newRows = new String[originalRows.length];
