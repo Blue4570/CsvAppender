@@ -43,7 +43,7 @@ public class IdWriter implements Writer{
             System.out.println("Error writing to new file");
             e.printStackTrace();
         }
-        System.out.println("New CSV file written to: " + this.newFileLocation);
+        System.out.println("\nNew CSV file written to: " + this.newFileLocation + "\n");
 
     }
 
