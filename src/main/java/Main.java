@@ -30,5 +30,3 @@ public class Main {
                 .write();
     }
 }
-//"/Users/Aaron/IdeaProjects/CsvWriter/src/main/resources/csv/newCsv.txt"
-//"/Users/Aaron/IdeaProjects/CsvWriter/src/main/resources/csv/TestCsv.txt"
