@@ -66,8 +66,7 @@ public class Writer {
         }
         writer.append("\n");
     }
-
-    //TODO Refactor to add new ID column
+    
     private void writeRows(FileWriter writer, String[] originalRows, int positionToAdd, int totalNumOfColumns) throws IOException {
 
         String[] newRows = new String[originalRows.length];
