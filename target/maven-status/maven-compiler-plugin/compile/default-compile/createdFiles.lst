@@ -1,3 +1,5 @@
-model/UserInput.class
 Main.class
-Writer.class
+service/Writer.class
+model/UserInput.class
+builders/WriterBuilder.class
+service/IdWriter.class

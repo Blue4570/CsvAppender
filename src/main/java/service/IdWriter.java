@@ -1,3 +1,5 @@
+package service;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,34 +12,40 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.regex.Pattern;
 
-public class Writer {
+public class IdWriter implements Writer{
 
     private final File csvFile;
     private final String delimiter;
-    private final String newHeader;
+    private final String newHeaderName;
     private final int newHeaderPosition;
-    static final String NEW_FILE_LOCATION_AND_NAME = "/Users/Aaron/IdeaProjects/CsvWriter/src/main/resources/csv/newCsv.txt";
-    public Writer(String delimiter, String newHeader, int newHeaderPosition) {
-        this.csvFile = new File(getClass().getClassLoader().getResource("csv/TestCsv.txt").getFile());
-        this.newHeader = newHeader;
+    private final String newFileLocation;
+//    static final String NEW_FILE_LOCATION_AND_NAME = "/Users/Aaron/IdeaProjects/CsvWriter/src/main/resources/csv/newCsv.txt";
+
+
+    public IdWriter(String delimiter, String newHeaderName, int newHeaderPosition, String oldFileLocation, String newFileLocation) {
+        this.csvFile = new File(oldFileLocation).getAbsoluteFile();
+
+        this.newFileLocation = newFileLocation;
+        this.newHeaderName = newHeaderName;
         this.newHeaderPosition = newHeaderPosition - 1;
         this.delimiter = delimiter;
     }
 
+    @Override
     public void write() {
         Map<String, String[]> data = getOriginalFileData(csvFile);
         String[] origHeaders = data.get("HEADERS");
         String[] allRows = data.get("ROWS");
         int totalNumberOfColumns = origHeaders.length + 1;
 
-        try(FileWriter writer = new FileWriter(NEW_FILE_LOCATION_AND_NAME)) {
-            writeHeaders(writer, origHeaders, this.newHeader, this.newHeaderPosition, totalNumberOfColumns);
+        try(FileWriter writer = new FileWriter(this.newFileLocation)) {
+            writeHeaders(writer, origHeaders, this.newHeaderName, this.newHeaderPosition, totalNumberOfColumns);
             writeRows(writer, allRows, this.newHeaderPosition, totalNumberOfColumns);
         } catch (IOException e) {
             System.out.println("Error writing to new file");
             e.printStackTrace();
         }
-        System.out.println("New CSV file written to: " + NEW_FILE_LOCATION_AND_NAME);
+        System.out.println("New CSV file written to: " + this.newFileLocation);
 
     }
 
