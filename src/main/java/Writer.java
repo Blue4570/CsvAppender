@@ -16,8 +16,7 @@ public class Writer {
     private final String delimiter;
     private final String newHeader;
     private final int newHeaderPosition;
-    static final String NEW_FILE_LOCATION_AND_NAME = "/Users/Aaron/IdeaProjects/CsvAppender/src/main/resources/csv/newCsv.txt";
-
+    static final String NEW_FILE_LOCATION_AND_NAME = "/Users/Aaron/IdeaProjects/CsvWriter/src/main/resources/csv/newCsv.txt";
     public Writer(String delimiter, String newheader, int newHeaderPosition) {
         this.csvFile = new File(getClass().getClassLoader().getResource("csv/TestCsv.txt").getFile());
         this.newHeader = newheader;
