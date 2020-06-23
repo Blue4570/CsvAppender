@@ -17,9 +17,9 @@ public class Writer {
     private final String newHeader;
     private final int newHeaderPosition;
     static final String NEW_FILE_LOCATION_AND_NAME = "/Users/Aaron/IdeaProjects/CsvWriter/src/main/resources/csv/newCsv.txt";
-    public Writer(String delimiter, String newheader, int newHeaderPosition) {
+    public Writer(String delimiter, String newHeader, int newHeaderPosition) {
         this.csvFile = new File(getClass().getClassLoader().getResource("csv/TestCsv.txt").getFile());
-        this.newHeader = newheader;
+        this.newHeader = newHeader;
         this.newHeaderPosition = newHeaderPosition - 1;
         this.delimiter = delimiter;
     }
@@ -138,6 +138,5 @@ public class Writer {
         Pattern p = Pattern.compile("[a-zA-Z0-9]");
         return p.matcher(delimiter).find();
     }
-
 
 }
