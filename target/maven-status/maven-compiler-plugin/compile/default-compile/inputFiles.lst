@@ -1,3 +1,5 @@
-/Users/Aaron/IdeaProjects/CsvAppender/src/main/java/NewTable.java
-/Users/Aaron/IdeaProjects/CsvAppender/src/main/java/Main.java
-/Users/Aaron/IdeaProjects/CsvAppender/src/main/java/CsvWriter.java
+/Users/Aaron/IdeaProjects/CsvWriter/src/main/java/builders/WriterBuilder.java
+/Users/Aaron/IdeaProjects/CsvWriter/src/main/java/service/Writer.java
+/Users/Aaron/IdeaProjects/CsvWriter/src/main/java/Main.java
+/Users/Aaron/IdeaProjects/CsvWriter/src/main/java/service/IdWriter.java
+/Users/Aaron/IdeaProjects/CsvWriter/src/main/java/model/UserInput.java

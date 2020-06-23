@@ -1,3 +1,5 @@
 Main.class
-NewTable.class
-CsvWriter.class
+service/Writer.class
+model/UserInput.class
+builders/WriterBuilder.class
+service/IdWriter.class
