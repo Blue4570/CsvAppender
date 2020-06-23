@@ -22,7 +22,6 @@ public class IdWriter implements Writer{
 
     public IdWriter(String delimiter, String newHeaderName, int newHeaderPosition, String oldFileLocation, String newFileLocation) {
         this.csvFile = new File(oldFileLocation).getAbsoluteFile();
-
         this.newFileLocation = newFileLocation;
         this.newHeaderName = newHeaderName;
         this.newHeaderPosition = newHeaderPosition - 1;
