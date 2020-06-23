@@ -1,5 +1,9 @@
-import builders.WriterBuilder;
-import model.UserInput;
+package com.CsvWriter;
+
+
+
+import com.CsvWriter.builders.WriterBuilder;
+import com.CsvWriter.model.UserInput;
 
 import java.util.Scanner;
 
